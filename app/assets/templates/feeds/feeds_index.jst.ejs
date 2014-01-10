@@ -1,0 +1,15 @@
+<h1>Feeds</h1>
+<form>
+  <label for="feedurl">Url</label>
+  <input type="text" id="feedurl" name="feed[url]">
+  <input type="submit" value="Add New Feed">
+</form>
+<ul>
+<% feeds.each(function(feed){ %>
+  <li>
+    <a href = "#feeds/<%= feed.escape('id') %>/entries">
+    <%= feed.escape('title') %>
+    </a>
+  </li>
+<% }); %>
+</ul>

@@ -8,7 +8,7 @@ gem 'rails', '3.2.13'
 gem 'sqlite3'
 gem 'simple-rss'
 require 'open-uri'
-
+gem 'backbone-on-rails'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -22,9 +22,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'ejs'
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+ gem 'bcrypt-ruby', '~> 3.0.0', :require => 'bcrypt'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
